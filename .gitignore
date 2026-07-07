@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.matplotlib_cache/
+outputs/
+vbcu_env/
+.venv/
+venv/
+.env
