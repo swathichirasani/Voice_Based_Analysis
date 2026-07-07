@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: voice-concept-understanding-analyser
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.address=0.0.0.0 --server.port=$PORT --server.headless=true --browser.gatherUsageStats=false --client.toolbarMode=minimal
+    autoDeploy: true
